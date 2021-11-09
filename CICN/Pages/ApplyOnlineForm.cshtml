@@ -1,0 +1,262 @@
+﻿@page
+@model CICN.Pages.ApplyOnlineFormModel
+@{
+    ViewData["Title"] = "Apply Online";
+}
+
+<div class="row">
+    <div class="applyOnlineForm col-12 text-center mt-4 mb-5">
+        <h1 class="">Apply Online</h1>
+    </div>
+</div>
+
+<p class="text-center font-weight-bold" style="color: #087829; font-size: 20px; ">Fill-Up Preliminary Form</p>
+
+<div style="font-size:15px;" class="row mb-5">
+    <div class="col-1">
+        <span class="formHeightFirst" style="border: 0.5px solid black; opacity:10%; display:block;"></span>
+    </div>
+
+    <div class="col-10">
+        <form>
+            <div class="form-row">
+                <div class="form-group mt-1 col-lg-2 col-md-3 text-md-right text-sm-left font-weight-bold m-0 p-0 pr-1">
+                    <label for="">Name:</label>
+                </div>
+                <div class="form-group col-md-9 col-lg-10">
+                    <input type="text" class="form-control mb-2" id="">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group mt-1 col-lg-2 col-md-3 text-md-right text-sm-left font-weight-bold m-0 p-0 pr-1">
+                    <label class="text-center" for="">Date of Birth:</label>
+                </div>
+                <div class="form-group col-md-4 col-lg-4">
+                    <input type="date" class="form-control text-center" id="">
+                </div>
+
+                <div class="form-group mt-1 col-lg-2 col-md-2 text-md-right text-sm-left font-weight-bold m-0 p-0 pr-1">
+                    <label class="text-center" for="">Gender:</label>
+                </div>
+                <div class="form-group col-md-3 col-lg-4">
+                    <select class="form-select form-control text-center">
+                        <option selected>Select</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group mt-1 col-lg-2 col-md-3 text-md-right text-sm-left font-weight-bold m-0 p-0 pr-1">
+                    <label for="">Email:</label>
+                </div>
+                <div class="form-group col-md-9 col-lg-10">
+                    <input type="text" class="form-control mb-2" id="">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group mt-1 col-lg-2 col-md-3 text-md-right text-sm-left font-weight-bold m-0 p-0 pr-1">
+                    <label class="text-center" for="">Number:</label>
+                </div>
+                <div class="form-group col-md-3 col-lg-4">
+                    <input type="tel" class="form-control" id="">
+                </div>
+
+                <div class="form-group mt-1 col-lg-2 col-md-3 text-md-right text-sm-left font-weight-bold m-0 p-0 pr-1">
+                    <label class="text-center" for="">Guardian's No:</label>
+                </div>
+                <div class="form-group col-md-3 col-lg-4">
+                    <input type="tel" class="form-control" id="">
+                </div>
+            </div>
+
+            <div class="col-12 ml-md-4 mt-3 mb-4">
+                <span style="border: 0.5px solid black; opacity:10%; display:block; height:0px; width:100%;"></span>
+            </div>
+
+            <p class="ml-lg-5 mt-5 font-weight-bold">Fill up both SSC/Equivalent and HSC/Equivalent with same information.</p>
+
+            <div class="col-12 ml-md-4">
+                <span style="border: 0.5px solid black; opacity:10%; display:block; height:0px; width:100%;"></span>
+            </div>
+        </form>
+    </div>
+
+    <div style="" class="col-1 mb-3">
+        <span class="formHeightFirst" style="border: 0.5px solid black; opacity:10%; display:block; float: right;"></span>
+    </div>
+
+    <div class="col-1">
+        <span class="formHeightLast" style="border: 0.5px solid black; opacity: 10%; display: block;"></span>
+    </div>
+
+    <div class="col-10 mt-3">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-4 text-center font-weight-bold m-0 p-0">
+                    <p>
+                        SSC/Equivalent <br />
+                        (Secondary School Certificate)
+                    </p>
+                </div>
+                <div class="col-1">
+                    <span class="formHeightMiddle" style="border: 0.5px solid black; opacity: 10%; display: block;"></span>
+                </div>
+
+                <div class="col-7">
+                    <div class="d-lg-flex d-md-inline-block w-100">
+                        <div class="form-group col-sm-12 col-md-12 col-lg-6">
+                            <select class="form-select form-control text-center">
+                                <option selected>Exam Type</option>
+                                <option value="1">SSC</option>
+                                <option value="1">Dakhil</option>
+                                <option value="2">Vocational</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-sm-12 col-md-12 col-lg-6 w-100">
+                            <select class="form-select form-control text-center">
+                                <option selected>Group</option>
+                                <option value="1">Science</option>
+                                <option value="2">Commerce </option>
+                                <option value="3">Arts</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="d-lg-flex d-md-inline-block w-100">
+                        <div class="form-group col-md-12 col-lg-6">
+                            <input class="form-select form-control text-center" type="number" placeholder="GPA" />
+                        </div>
+
+                        <div class="form-group col-md-12 col-lg-6">
+                            <input class="form-select form-control text-center" type="number" placeholder="Total Mark" />
+                        </div>
+                    </div>
+
+                    <div class="d-lg-flex d-md-inline-block w-100">
+                        <div class="form-group col-sm-12 col-md-12 col-lg-6">
+                            <input class="form-select form-control text-center" type="number" min="1900" max="2099" step="1" placeholder="Year" />
+                        </div>
+
+                        <div class="form-group col-sm-12 col-md-12 col-lg-6 w-100">
+                            <select class="form-select form-control text-center">
+                                <option selected>Select Board</option>
+                                <option value="1">Barisal</option>
+                                <option value="2">Chattogram</option>
+                                <option value="3">Comilla</option>
+                                <option value="4">Dhaka</option>
+                                <option value="5">Dinajpur</option>
+                                <option value="6">Jashore</option>
+                                <option value="7">Mymensingh</option>
+                                <option value="8">Rajshahi</option>
+                                <option value="9">Sylhet</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                        <input style="font-size: 15px;" class="form-select form-control" type="text" placeholder="Institute Name" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-3 ml-md-4">
+                <span style="border: 0.5px solid black; opacity:10%; display:block; height:0px; width:100%;"></span>
+            </div>
+        </form>
+    </div>
+
+    <div style="" class="col-1 mb-3">
+        <span class="formHeightLast" style="border: 0.5px solid black; opacity:10%; display:block; float: right;"></span>
+    </div>
+
+    <div class="col-1">
+        <span class="formHeightLast" style="border: 0.5px solid black; opacity: 10%; display: block;"></span>
+    </div>
+
+    <div class="col-10 mt-3">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-4 text-center font-weight-bold m-0 p-0">
+                    <p>
+                        HSC/Equivalent <br />
+                        (Secondary School Certificate)
+                    </p>
+                </div>
+                <div class="col-1">
+                    <span class="formHeightMiddle" style="border: 0.5px solid black; opacity: 10%; display: block;"></span>
+                </div>
+
+                <div class="col-7">
+                    <div class="d-lg-flex d-md-inline-block w-100">
+                        <div class="form-group col-sm-12 col-md-12 col-lg-6">
+                            <select class="form-select form-control text-center">
+                                <option selected>Exam Type</option>
+                                <option value="1">SSC</option>
+                                <option value="1">Dakhil</option>
+                                <option value="2">Vocational</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-sm-12 col-md-12 col-lg-6 w-100">
+                            <select class="form-select form-control text-center">
+                                <option selected>Group</option>
+                                <option value="1">Science</option>
+                                <option value="2">Commerce </option>
+                                <option value="3">Arts</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="d-lg-flex d-md-inline-block w-100">
+                        <div class="form-group col-md-12 col-lg-6">
+                            <input class="form-select form-control text-center" type="number" placeholder="GPA" />
+                        </div>
+
+                        <div class="form-group col-md-12 col-lg-6">
+                            <input class="form-select form-control text-center" type="number" placeholder="Total Mark" />
+                        </div>
+                    </div>
+
+                    <div class="d-lg-flex d-md-inline-block w-100">
+                        <div class="form-group col-sm-12 col-md-12 col-lg-6">
+                            <input class="form-select form-control text-center" type="number" placeholder="Year" />
+                        </div>
+
+                        <div class="form-group col-sm-12 col-md-12 col-lg-6 w-100">
+                            <select class="form-select form-control text-center">
+                                <option selected>Select Board</option>
+                                <option value="1">Barisal</option>
+                                <option value="2">Chattogram</option>
+                                <option value="3">Comilla</option>
+                                <option value="4">Dhaka</option>
+                                <option value="5">Dinajpur</option>
+                                <option value="6">Jashore</option>
+                                <option value="7">Mymensingh</option>
+                                <option value="8">Rajshahi</option>
+                                <option value="9">Sylhet</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                        <input style="font-size: 15px;" class="form-select form-control" type="text" placeholder="Institute Name" />
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button font-size: 20px;" type="submit" class="btn btn-danger text-white py-1 px-3">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div style="" class="col-1 ">
+        <span class="formHeightLast" style="border: 0.5px solid black; opacity:10%; display:block; float: right;"></span>
+    </div>
+</div>

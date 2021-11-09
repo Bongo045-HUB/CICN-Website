@@ -1,0 +1,38 @@
+﻿@page
+@model CICN.Pages.TestResultModel
+@{
+    ViewData["Title"] = "Test Result";
+}
+
+<div class="row">
+    <div class="tutionFees col-12 text-center mt-4 mb-5">
+        <h1 class="">Test Result</h1>
+    </div>
+</div>
+
+<table border="1" width="100%" height="100%" style="font-size:20px" class="m-auto text-center">
+    <thead>
+        <tr>
+            <th class="p-2">#SL</th>
+            <th>Publish Date</th>
+            <th>Title</th>
+            <th>List</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td class="p-2">01</td>
+            <td scope="row">1st November, 2021</td>
+            <td>LIST OF SELECTED CANDIDATES– 2021</td>
+            <td> <a asp-page="SelectedCandidates1">View List</a></td>
+        </tr>
+
+        <tr>
+            <td class="p-2">02</td>
+            <td scope="row">1st November, 2022</td>
+            <td>LIST OF SELECTED CANDIDATES– 2022</td>
+            <td><a asp-page="SelectedCandidates2">View List</a></td>
+        </tr>
+    </tbody>
+</table>
